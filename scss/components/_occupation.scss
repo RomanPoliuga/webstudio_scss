@@ -1,0 +1,27 @@
+.occupation-title {
+    margin-bottom: 50px;
+    font-weight: 700;
+    font-size: 36px;
+    letter-spacing: 0.03em;
+    text-align: center;
+    color: #212121;
+  }
+  .occupation .hero-list-child{
+    position: relative;
+  }
+  .occupation-text {
+    position: absolute;
+    left: 0;
+  bottom: 0;
+  width: 100%;
+    padding-top: 27px;
+    padding-bottom: 27px;
+    font-family: var(--font-family);
+    font-weight: 700;
+    font-size: 14px;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    text-align: center;
+    color: #fff;
+    background: rgba(47, 48, 58, 0.8);
+  }
