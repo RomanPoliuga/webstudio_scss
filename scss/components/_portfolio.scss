@@ -57,5 +57,7 @@
       0 3px 1px 0 rgba(0, 0, 0, 0.1);
   }
   .portfolio-hero-list-child {
+    position: relative;
     border: 1px solid #eee;
+  overflow: hidden;
   }

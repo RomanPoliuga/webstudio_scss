@@ -28,6 +28,7 @@
   .header-list {
     align-items: center;
     gap: 50px;
+    position: relative;
   }
   .header-nav-link,
   .header-contacts-link {
@@ -42,6 +43,7 @@
     display: flex;
     align-items: center;
     gap: 8px;
+    
   }
   .header-nav-link.curent::after{
     content: "";

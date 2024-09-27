@@ -1,16 +1,3 @@
-:root {
-  --main-heading-color: #212121;
-  --buttons-background-color: #5ab3fc;
-  --buttons-text-color: #ffffff;
-  --main-background-color: #f5f4fa;
-  --main-text-color: #212121;
-  --secondary-text-color: #757575;
-  --logo-color: #000000;
-  --nav-buttons-background-color: #f5f4fa;
-  --main-background-color: #2f303a;
-  --footer-contrast-color: #rgba (255, 255, 255, 0.6);
-}
-
 body {
   font-family: "Roboto", sans-serif;
   color: #757575;
@@ -85,6 +72,7 @@ a {
 .header-list {
   align-items: center;
   gap: 50px;
+  position: relative;
 }
 
 .header-nav-link,
@@ -344,7 +332,7 @@ a {
 
 .customers-title {
   margin-bottom: 50px;
-  font-family: Roboto;
+  font-family: var(--font-family);
   font-size: 36px;
   font-weight: 700;
   line-height: 42.19px;
