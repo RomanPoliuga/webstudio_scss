@@ -1,31 +1,31 @@
 .socials-list {
-    display: flex;
-    margin-top: 16px;
-    gap: 10px;
-    justify-content: center;
-  }
-  .socials-list-item {
-    width: 44px;
-    height: 44px;
-  }
-  .socials-list_icon {
-    width: 20px;
-    fill: currentColor;
-    /* fill: #757575; */
-  }
-  .socials-list-link {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 44px;
-    height: 44px;
-    border-radius: 50%;
-    color: #afb1b8;
-  }
-  .socials-list-link:hover {
-    background-color: #2196f3;
-    color: #ffffff;
-  }
-  .socials-box {
-    margin-right: 93px;
-  }
+  display: flex;
+  margin-top: 16px;
+  gap: 10px;
+  justify-content: center;
+}
+.socials-list-item {
+  width: 44px;
+  height: 44px;
+}
+.socials-list_icon {
+  width: 20px;
+  fill: currentColor;
+  /* fill: #757575; */
+}
+.socials-list-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  color: #afb1b8;
+}
+.socials-list-link:hover {
+  background-color: #2196f3;
+  color: #ffffff;
+}
+.socials-box {
+  margin-right: 93px;
+}
