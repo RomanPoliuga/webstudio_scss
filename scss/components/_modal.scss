@@ -79,7 +79,7 @@
     background-color: #188ce8;
     width: 200px;
     height: 50px;
-    font-family: var(--font-family);
+    font-family: $font-family;
     font-weight: 700;
     font-size: 16px;
     line-height: 187%;
@@ -92,7 +92,7 @@
     border: 0;
   }
   &-text {
-    font-family: var(--font-family);
+    font-family:$font-family;
     font-weight: 700;
     font-size: 20px;
     letter-spacing: 0.03em;
