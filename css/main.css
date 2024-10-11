@@ -212,7 +212,7 @@ a {
   width: 100%;
   padding-top: 27px;
   padding-bottom: 27px;
-  font-family: var(--font-family);
+  font-family: "Roboto", sans-serif;
   font-weight: 700;
   font-size: 14px;
   letter-spacing: 0.03em;
@@ -301,7 +301,7 @@ a {
 }
 .customers-title {
   margin-bottom: 50px;
-  font-family: var(--font-family);
+  font-family: "Roboto", sans-serif;
   font-size: 36px;
   font-weight: 700;
   line-height: 42.19px;
@@ -363,7 +363,7 @@ a {
 }
 .footer-socials-text {
   margin-bottom: 20px;
-  font-family: Roboto;
+  font-family: "Roboto", sans-serif;
   font-size: 14px;
   font-weight: 700;
   line-height: 16.41px;
@@ -408,7 +408,7 @@ a {
 
 .form-text {
   margin-bottom: 20px;
-  font-family: var(--font-family);
+  font-family: "Roboto", sans-serif;
   font-weight: 700;
   font-size: 14px;
   letter-spacing: 0.03em;
@@ -417,7 +417,7 @@ a {
 }
 
 .form-btn {
-  font-family: var(--font-family);
+  font-family: "Roboto", sans-serif;
   font-weight: 700;
   font-size: 16px;
   line-height: 187%;
@@ -450,7 +450,7 @@ a {
 }
 
 .form-input::-moz-placeholder {
-  font-family: var(--font-family);
+  font-family: "Roboto", sans-serif;
   font-weight: 400;
   font-size: 16px;
   line-height: 125%;
@@ -459,7 +459,7 @@ a {
 }
 
 .form-input::placeholder {
-  font-family: var(--font-family);
+  font-family: "Roboto", sans-serif;
   font-weight: 400;
   font-size: 16px;
   line-height: 125%;
@@ -526,38 +526,6 @@ a {
 
 .portfolio-box {
   padding: 20px 24px;
-}
-
-.thumb {
-  position: relative;
-  width: 370px;
-  height: 294px;
-  margin: 0 auto;
-  overflow: hidden;
-}
-
-.overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(33, 150, 243, 0.9);
-  transform: translatey(100%);
-  transition: transform 250ms ease-in-out;
-}
-
-.thumb:hover .overlay {
-  transform: translatey(0);
-}
-
-.overlay p {
-  font-family: var(--font-family);
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 156%;
-  letter-spacing: 0.03em;
-  color: #fff;
 }
 
 .backdrop {
@@ -639,7 +607,7 @@ a {
   background-color: #188ce8;
   width: 200px;
   height: 50px;
-  font-family: var(--font-family);
+  font-family: "Roboto", sans-serif;
   font-weight: 700;
   font-size: 16px;
   line-height: 187%;
@@ -652,7 +620,7 @@ a {
   border: 0;
 }
 .modal-text {
-  font-family: var(--font-family);
+  font-family: "Roboto", sans-serif;
   font-weight: 700;
   font-size: 20px;
   letter-spacing: 0.03em;
