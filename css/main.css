@@ -150,6 +150,10 @@ a {
   cursor: pointer;
 }
 
+.hero-list-child {
+  margin-right: 30px;
+}
+
 .features {
   padding-top: 70px;
   padding-bottom: 94px;

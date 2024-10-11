@@ -25,6 +25,7 @@
 .socials-list-link:hover {
   background-color: #2196f3;
   color: #ffffff;
+  transition:  250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .socials-box {
   margin-right: 93px;
