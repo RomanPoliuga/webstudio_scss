@@ -1,32 +1,28 @@
 .thumb {
-    position: relative;
-    width: 370px;
-    height: 294px;
-    margin: 0 auto;
-    overflow: hidden;
-  }
-  .overlay {
-
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(33, 150, 243, 0.9);
-  
-    transform: translatey(100%);
-    transition: transform 250ms ease-in-out;
-  }
-  .portfolio-hero-list-child:hover .overlay {
-    transform: translatey(0);
-  }
-  
-  .overlay p {
-   
-    font-family: $font-family;
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 156%;
-    letter-spacing: 0.03em;
-    color: #fff;
-  }
+  position: relative;
+  width: 370px;
+  height: 294px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(33, 150, 243, 0.9);
+  transform: translatey(100%);
+  transition: transform 250ms ease-in-out;
+}
+.thumb:hover .overlay {
+  transform: translatey(0);
+}
+.overlay p {
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 156%;
+  letter-spacing: 0.03em;
+  color: #fff;
+}
