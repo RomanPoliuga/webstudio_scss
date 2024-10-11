@@ -40,6 +40,7 @@
     left: 12px;
     bottom: 11px;
     width: 18px;
+    transition: fill  250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
   &-label {
     display: flex;
@@ -58,17 +59,18 @@
     border-radius: 4px;
     outline: none;
     padding-left: 42px;
+    transition:border  250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
   &-textarea {
     resize: none;
   }
   &-field:focus-within .modal-list_icon {
     fill: #2196f3;
-    transition:  250ms cubic-bezier(0.4, 0, 0.2, 1);
+   
   }
   &-field:focus-within .modal-input {
     border: 1px solid #2196f3;
-    transition:  250ms cubic-bezier(0.4, 0, 0.2, 1);
+    
   }
   &-btn {
     margin-right: auto;
@@ -109,7 +111,7 @@
 
 .close-btn:hover .modal-list_icon-btn {
   fill: #188ce8;
-  transition:  250ms cubic-bezier(0.4, 0, 0.2, 1);
+  
 }
 .close-btn {
   top: 8px;
@@ -124,6 +126,7 @@
   align-items: center;
   justify-content: center;
   fill: #000000;
+  transition: fill  250ms cubic-bezier(0.4, 0, 0.2, 1),transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .policy-span {
