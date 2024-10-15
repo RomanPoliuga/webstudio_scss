@@ -37,16 +37,33 @@ address {
 }
 
 .header {
-  padding-top: 24px;
-  padding-bottom: 25px;
+  padding-top: 16px;
+  padding-bottom: 16px;
+}
+@media (min-width: 768px) {
+  .header {
+    padding-top: 26px;
+    padding-bottom: 26px;
+  }
+}
+@media (min-width: 1200px) {
+  .header {
+    padding-top: 24px;
+    padding-bottom: 25px;
+  }
 }
 .header-logo {
   margin-left: auto;
   margin-right: 93px;
   font-weight: 700;
-  font-size: 26px;
+  font-size: 24px;
   letter-spacing: 0.03em;
   font-family: "Raleway", sans-serif;
+}
+@media (min-width: 768px) {
+  .header-logo {
+    font-size: 26px;
+  }
 }
 .header-logo {
   color: #000000;
@@ -55,6 +72,11 @@ address {
   align-items: center;
   gap: 50px;
   position: relative;
+}
+@media (max-width: 768px) {
+  .header-list {
+    display: none;
+  }
 }
 .header-nav-link, .header-contacts-link {
   font-weight: 500;
@@ -100,6 +122,11 @@ address {
   gap: 50px;
   margin-left: auto;
 }
+@media (max-width: 768px) {
+  .contacts-list {
+    display: none;
+  }
+}
 
 a {
   color: inherit;
@@ -107,11 +134,10 @@ a {
 }
 
 .hero {
-  padding-top: 200px;
-  padding-bottom: 200px;
+  padding-top: 118px;
+  padding-bottom: 118px;
   margin-right: auto;
   margin-left: auto;
-  max-width: 1600px;
   background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/background-hero.png");
   background-repeat: no-repeat;
   background-size: cover;
@@ -119,14 +145,27 @@ a {
   margin-bottom: 30px;
   background-color: #2f303a;
 }
+@media (min-width: 1200px) {
+  .hero {
+    max-width: 1440px;
+    padding-top: 200px;
+    padding-bottom: 200px;
+  }
+}
 .hero-title {
   margin-bottom: 30px;
   font-weight: 900;
-  font-size: 44px;
-  line-height: 136%;
+  font-size: 26px;
+  line-height: 162%;
   letter-spacing: 0.06em;
   text-transform: uppercase;
   text-align: center;
+}
+@media (min-width: 1200px) {
+  .hero-title {
+    font-size: 44px;
+    line-height: 136%;
+  }
 }
 .hero-btn {
   padding: 10px 32px;

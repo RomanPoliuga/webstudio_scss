@@ -1,13 +1,24 @@
 .header {
-  padding-top: 24px;
-  padding-bottom: 25px;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  @media (min-width: 768px) {
+    padding-top: 26px;
+    padding-bottom: 26px;
+  }
+  @media (min-width: 1200px) {
+    padding-top: 24px;
+    padding-bottom: 25px;
+  }
   &-logo {
     margin-left: auto;
     margin-right: 93px;
     font-weight: 700;
-    font-size: 26px;
+    font-size: 24px;
     letter-spacing: 0.03em;
     font-family: $second-family;
+    @media (min-width: 768px) {
+      font-size: 26px;
+    }
   }
   &-logo {
     color: #000000;
@@ -16,6 +27,9 @@
     align-items: center;
     gap: 50px;
     position: relative;
+    @media (max-width: 768px) {
+      display: none;
+    }
   }
   &-nav-link,
   &-contacts-link {
@@ -64,6 +78,9 @@
   align-items: center;
   gap: 50px;
   margin-left: auto;
+  @media (max-width: 768px) {
+    display: none;
+  }
 }
 a {
   color: inherit;

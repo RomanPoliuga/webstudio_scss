@@ -1,9 +1,8 @@
 .hero {
-  padding-top: 200px;
-  padding-bottom: 200px;
-  margin-right: auto;
-  margin-left: auto;
-  max-width: 1600px;
+  padding-top: 118px;
+  padding-bottom: 118px;
+ 
+
   background-image: linear-gradient(
       to right,
       rgba(47, 48, 58, 0.4),
@@ -15,14 +14,25 @@
   text-align: center;
   margin-bottom: 30px;
   background-color: #2f303a;
+  height: 400px;
+
+  @media (min-width: 1200px) {
+    max-width: 1440px;
+    padding-top: 200px;
+    padding-bottom: 200px;
+  }
   &-title {
     margin-bottom: 30px;
     font-weight: 900;
-    font-size: 44px;
-    line-height: 136%;
+    font-size: 26px;
+    line-height: 162%;
     letter-spacing: 0.06em;
     text-transform: uppercase;
     text-align: center;
+    @media (min-width: 1200px) {
+     font-size:44px ;
+     line-height:136% ; 
+    }
   }
   &-btn {
     padding: 10px 32px;
