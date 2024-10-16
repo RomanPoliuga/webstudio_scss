@@ -30,13 +30,110 @@ address {
 }
 
 .container {
-  min-width: 320px;
-  margin-right: auto;
-  margin-left: auto;
+  width: 1200px;
   padding: 0 15px;
-  outline: 1px dashed blue;
+  outline: 2px dashed blue;
+  margin: 0 auto;
 }
 
+.header {
+  padding-top: 16px;
+  padding-bottom: 16px;
+}
+@media (min-width: 768px) {
+  .header {
+    padding-top: 26px;
+    padding-bottom: 26px;
+  }
+}
+@media (min-width: 1200px) {
+  .header {
+    padding-top: 24px;
+    padding-bottom: 25px;
+  }
+}
+.header-logo {
+  margin-left: auto;
+  margin-right: 93px;
+  font-weight: 700;
+  font-size: 24px;
+  letter-spacing: 0.03em;
+  font-family: "Raleway", sans-serif;
+}
+@media (min-width: 768px) {
+  .header-logo {
+    font-size: 26px;
+  }
+}
+.header-logo {
+  color: #000000;
+}
+.header-list {
+  align-items: center;
+  gap: 50px;
+  position: relative;
+}
+@media (max-width: 768px) {
+  .header-list {
+    display: none;
+  }
+}
+.header-nav-link, .header-contacts-link {
+  font-weight: 500;
+  font-size: 14px;
+  letter-spacing: 0.02em;
+  line-height: 1.14;
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.header-contacts-link {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.header-nav-link.curent::after {
+  content: "";
+  background-color: #2196f3;
+  height: 4px;
+  width: 100%;
+  border-radius: 2px;
+  display: block;
+  margin-top: 28px;
+  position: absolute;
+}
+.header-nav-link.curent {
+  color: #2196f3;
+}
+.header-nav-link:hover, .header-contacts-link:hover, .header-nav-link:focus, .header-contacts-link:focus {
+  color: #2196f3;
+}
+.header-contacts-link {
+  color: #757575;
+}
+.header-nav-link {
+  color: #212121;
+}
+
+.logo-designe {
+  color: #2196f3;
+}
+
+.contacts-list {
+  align-items: center;
+  gap: 50px;
+  margin-left: auto;
+}
+@media (max-width: 768px) {
+  .contacts-list {
+    display: none;
+  }
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+<<<<<<< HEAD
 .header {
   padding-top: 16px;
   padding-bottom: 16px;
@@ -136,12 +233,19 @@ address {
       rgba(47, 48, 58, 0.4)
     ),
     url("../images/background-hero.png");
+=======
+.hero {
+  padding-top: 118px;
+  padding-bottom: 118px;
+  margin-right: auto;
+  margin-left: auto;
+  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/background-hero.png");
+>>>>>>> parent of e7d61b4 (ccc)
   background-repeat: no-repeat;
   background-size: cover;
   text-align: center;
   margin-bottom: 30px;
   background-color: #2f303a;
-  height: 400px;
 }
 @media (min-width: 1200px) {
   .hero {
