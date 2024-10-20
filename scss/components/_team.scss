@@ -1,30 +1,44 @@
 .team {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
   color: #f5f4fa;
+  @media (min-width:1200px) {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
   &-title {
     margin-bottom: 50px;
     text-align: center;
     font-weight: 700;
-    font-size: 36px;
+    font-size: 28px;
     letter-spacing: 0.03em;
     text-align: center;
     color: #212121;
+    @media (max-width:1200px) {
+      font-size: 36px;
+    }
   }
   &-name {
     margin-bottom: 10px;
     margin-top: 30px;
     font-weight: 500;
-    font-size: 16px;
+    font-size: 14px;
     letter-spacing: 0.03em;
+    text-transform: uppercase;
     text-align: center;
     color: #212121;
+    @media (min-width:768px) {
+      font-size: 16px;
+    }
   }
   & .hero-list-child {
     padding-bottom: 30px;
     box-shadow: 0 2px 1px 0 rgba(0, 0, 0, 0.2), 0 1px 1px 0 rgba(0, 0, 0, 0.14),
       0 1px 3px 0 rgba(0, 0, 0, 0.12);
     border-radius: 0 0 4px 4px;
+    @media (max-width:767px) {
+      margin-bottom: 30px;
+    }
   }
   &-position {
     font-weight: 400;
@@ -33,4 +47,5 @@
     text-align: center;
     color: #757575;
   }
+  
 }

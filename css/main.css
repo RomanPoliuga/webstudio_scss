@@ -7,6 +7,12 @@ body {
   letter-spacing: 0.03em;
 }
 
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
 h1,
 h2,
 h3,
@@ -35,6 +41,11 @@ address {
   margin-left: auto;
   padding: 0 15px;
   outline: 1px dashed blue;
+}
+
+.section {
+  margin-right: auto;
+  margin-left: auto;
 }
 
 .header {
@@ -91,12 +102,12 @@ address {
   align-items: center;
   gap: 8px;
 }
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   .header-contacts-link {
     display: none;
   }
 }
-@media (max-width: 1200px) {
+@media (max-width: 1199px) {
   .header-contacts-link :nth-child(1) {
     margin-bottom: 10px;
   }
@@ -133,12 +144,12 @@ address {
   gap: 50px;
   margin-left: auto;
 }
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   .contacts-list {
     display: none;
   }
 }
-@media (max-width: 1200px) {
+@media (max-width: 1199px) {
   .contacts-list {
     display: block;
     align-items: center;
@@ -157,13 +168,10 @@ a {
   background-repeat: no-repeat;
   background-size: cover;
   text-align: center;
-  margin-bottom: 30px;
   background-color: #2f303a;
-  height: 400px;
 }
 @media (min-width: 1200px) {
   .hero {
-    max-width: 1440px;
     padding-top: 200px;
     padding-bottom: 200px;
   }
@@ -194,9 +202,6 @@ a {
 .hero-title {
   color: #ffffff;
 }
-.hero-list {
-  display: flex;
-}
 .hero-btn {
   color: #ffffff;
   background-color: #5ab3fc;
@@ -205,13 +210,15 @@ a {
   cursor: pointer;
 }
 
-.hero-list-child {
-  margin-right: 30px;
-}
-
 .features {
-  padding-top: 70px;
-  padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+@media (min-width: 1200px) {
+  .features {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }
 .features-description {
   font-weight: 400;
@@ -227,6 +234,16 @@ a {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: #212121;
+}
+@media (min-width: 768px) {
+  .features .hero-list-child {
+    width: 354px;
+  }
+}
+@media (min-width: 1200px) {
+  .features .hero-list-child {
+    width: 270px;
+  }
 }
 .features .hero-list-child::before {
   display: block;
@@ -251,9 +268,12 @@ a {
   background-image: url("../images/astronaut.svg");
 }
 
-@media (max-width: 768px) {
-  .features .hero-list-child {
-    display: block;
+@media (min-width: 768px) {
+  .hero-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
   }
 }
 
@@ -287,33 +307,61 @@ a {
   background: rgba(47, 48, 58, 0.8);
 }
 
+@media (max-width: 1199px) {
+  .occupation {
+    display: none;
+  }
+}
+
 .team {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
   color: #f5f4fa;
+}
+@media (min-width: 1200px) {
+  .team {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }
 .team-title {
   margin-bottom: 50px;
   text-align: center;
   font-weight: 700;
-  font-size: 36px;
+  font-size: 28px;
   letter-spacing: 0.03em;
   text-align: center;
   color: #212121;
+}
+@media (max-width: 1200px) {
+  .team-title {
+    font-size: 36px;
+  }
 }
 .team-name {
   margin-bottom: 10px;
   margin-top: 30px;
   font-weight: 500;
-  font-size: 16px;
+  font-size: 14px;
   letter-spacing: 0.03em;
+  text-transform: uppercase;
   text-align: center;
   color: #212121;
+}
+@media (min-width: 768px) {
+  .team-name {
+    font-size: 16px;
+  }
 }
 .team .hero-list-child {
   padding-bottom: 30px;
   box-shadow: 0 2px 1px 0 rgba(0, 0, 0, 0.2), 0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 1px 3px 0 rgba(0, 0, 0, 0.12);
   border-radius: 0 0 4px 4px;
+}
+@media (max-width: 767px) {
+  .team .hero-list-child {
+    margin-bottom: 30px;
+  }
 }
 .team-position {
   font-weight: 400;
