@@ -38,6 +38,11 @@
     border-radius: 0 0 4px 4px;
     @media (max-width:767px) {
       margin-bottom: 30px;
+      @media screen and (min-width: 1200px) {
+  
+        width: calc((100% - 90px) / 4);
+    
+}
     }
   }
   &-position {
