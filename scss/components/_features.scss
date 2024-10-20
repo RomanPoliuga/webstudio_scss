@@ -41,35 +41,19 @@
   }
   & .hero-list-child.anttenna::before {
     background-image: url("../images/antenna.svg");
-    @media (min-device-pixel-ratio: 2),
-    (min-resolution: 192dpi),
-    (min-resolution: 2dppx) {
-  background-image: url(../images/antenna2x.jpg);
-    }
+   
   }
   & .hero-list-child.clock::before {
     background-image: url("../images/clock.svg");
-    @media (min-device-pixel-ratio: 2),
-    (min-resolution: 192dpi),
-    (min-resolution: 2dppx) {
-  background-image: url(../images/clock2x.jpg);
-    }
+    
     }
   & .hero-list-child.diagram::before {
     background-image: url("../images/diagram.svg");
-    @media (min-device-pixel-ratio: 2),
-    (min-resolution: 192dpi),
-    (min-resolution: 2dppx) {
-  background-image: url(../images/diagram2x.jpg);
-    }
+    
   }
   & .hero-list-child.astronaut::before {
     background-image: url("../images/astronaut.svg");
-    @media (min-device-pixel-ratio: 2),
-    (min-resolution: 192dpi),
-    (min-resolution: 2dppx) {
-  background-image: url(../images/astronaut2x.jpg);
-    }
+    
   }
 }
 .hero-list {

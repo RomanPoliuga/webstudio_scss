@@ -35,6 +35,12 @@ address {
   display: flex;
 }
 
+img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
 .container {
   min-width: 320px;
   margin-right: auto;
@@ -164,16 +170,37 @@ a {
 .hero {
   padding-top: 118px;
   padding-bottom: 118px;
-  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/background-hero.png");
+  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/mobile-hero-bg.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   text-align: center;
   background-color: #2f303a;
 }
+@media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .hero {
+    background-image: url(../images/mobile-hero-bg2x.jpg);
+  }
+}
+@media (min-width: 768px) {
+  .hero {
+    background-image: url("../images/tablet-hero-bg.jpg");
+  }
+}
+@media (min-width: 768px) and (min-device-pixel-ratio: 2), (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), (min-width: 768px) and (min-resolution: 192dpi), (min-width: 768px) and (min-resolution: 2dppx) {
+  .hero {
+    background-image: url(../images/tablet-hero-bg2x.jpg);
+  }
+}
 @media (min-width: 1200px) {
   .hero {
     padding-top: 200px;
     padding-bottom: 200px;
+    background-image: url("../images/background-hero.png");
+  }
+}
+@media (min-width: 1200px) and (min-device-pixel-ratio: 2), (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2), (min-width: 1200px) and (min-resolution: 192dpi), (min-width: 1200px) and (min-resolution: 2dppx) {
+  .hero {
+    background-image: url(../../images/hero-bg2x.jpg);
   }
 }
 .hero-title {
@@ -410,22 +437,43 @@ a {
 }
 
 .customers {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+@media (min-width: 1200px) {
+  .customers {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }
 .customers-title {
-  margin-bottom: 50px;
+  margin-bottom: 30px;
   font-family: "Roboto", sans-serif;
-  font-size: 36px;
+  font-size: 28px;
   font-weight: 700;
-  line-height: 42.19px;
   letter-spacing: 0.03em;
   text-align: center;
+}
+@media (min-width: 1200px) {
+  .customers-title {
+    font-size: 36px;
+    margin-bottom: 50px;
+  }
 }
 .customers-list {
   display: flex;
   gap: 30px;
   justify-content: center;
+}
+@media (max-width: 1199px) {
+  .customers-list {
+    flex-wrap: wrap;
+  }
+}
+@media screen and (max-width: 767px) {
+  .customers-list-item .clients__item {
+    width: calc((100% - 30px) / 2);
+  }
 }
 .customers-list-link {
   display: flex;
@@ -452,10 +500,6 @@ a {
   padding-top: 60px;
   padding-bottom: 60px;
   background-color: #2f303a;
-}
-.footer-logo {
-  margin-bottom: 20px;
-  color: #ffffff;
 }
 .footer-adress {
   margin-bottom: 9px;
@@ -509,8 +553,10 @@ a {
   width: 20px;
   height: 20px;
 }
-.footer-form {
-  display: flex;
+@media (min-width: 1200px) {
+  .footer-form {
+    display: flex;
+  }
 }
 
 .link-footer-contacts {
@@ -522,6 +568,41 @@ a {
   display: block;
 }
 
+.linkfooter-logo {
+  font-family: var(--second-family);
+  font-weight: 700;
+  font-size: 26px;
+  letter-spacing: 0.03em;
+  color: #fff;
+}
+
+.logo-designe {
+  font-family: var(--second-family);
+  font-weight: 700;
+  font-size: 26px;
+  letter-spacing: 0.03em;
+  color: #2196f3;
+  margin-bottom: 20px;
+}
+
+.footer-box {
+  display: flex;
+}
+@media (max-width: 767px) {
+  .footer-box {
+    flex-wrap: wrap;
+  }
+}
+@media (max-width: 1199px) {
+  .footer-box {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: baseline;
+    gap: 60px 106px;
+  }
+}
+
 .form-text {
   margin-bottom: 20px;
   font-family: "Roboto", sans-serif;
@@ -530,6 +611,12 @@ a {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: #fff;
+}
+@media (max-width: 1199px) {
+  .form-text {
+    display: flex;
+    justify-content: center;
+  }
 }
 
 .form-btn {
@@ -550,6 +637,12 @@ a {
   border: 0;
   border-radius: 4px;
 }
+@media (max-width: 1199px) {
+  .form-btn {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
 
 .form-img {
   margin-left: 10px;
@@ -563,6 +656,11 @@ a {
   background-color: transparent;
   border: 1px solid rgba(255, 255, 255, 0.3);
   border-radius: 4px;
+}
+@media (max-width: 1199px) {
+  .form-input {
+    margin-bottom: 20px;
+  }
 }
 
 .form-input::-moz-placeholder {
