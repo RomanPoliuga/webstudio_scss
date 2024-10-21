@@ -21,7 +21,9 @@
     color: rgba(255, 255, 255, 0.6);
   }
   &-contacts-box {
+    @media screen and (min-width: 1200px) {
     margin-right: 70px;
+    }
   }
   &-socials-text {
     margin-bottom: 20px;
