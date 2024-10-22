@@ -106,7 +106,7 @@ img {
   gap: 50px;
   position: relative;
 }
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   .header-list {
     display: none;
   }
@@ -193,7 +193,7 @@ a {
 }
 @media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
   .hero {
-    background-image: url(../images/mobile-hero-bg2x.jpg);
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/mobile-hero-bg2x.jpg);
   }
 }
 @media (min-width: 768px) {
@@ -203,19 +203,19 @@ a {
 }
 @media (min-width: 768px) and (min-device-pixel-ratio: 2), (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), (min-width: 768px) and (min-resolution: 192dpi), (min-width: 768px) and (min-resolution: 2dppx) {
   .hero {
-    background-image: url(../images/tablet-hero-bg2x.jpg);
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/tablet-hero-bg2x.jpg);
   }
 }
 @media (min-width: 1200px) {
   .hero {
     padding-top: 200px;
     padding-bottom: 200px;
-    background-image: url("../images/background-hero.png");
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/hero-bg.jpg");
   }
 }
 @media (min-width: 1200px) and (min-device-pixel-ratio: 2), (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2), (min-width: 1200px) and (min-resolution: 192dpi), (min-width: 1200px) and (min-resolution: 2dppx) {
   .hero {
-    background-image: url(../../images/hero-bg2x.jpg);
+    background-image: url(../images/hero-bg2x.jpg);
   }
 }
 .hero-title {
@@ -247,9 +247,22 @@ a {
 .hero-btn {
   color: #ffffff;
   background-color: #5ab3fc;
-  border: o;
+  border: 0;
   border-radius: 4px;
   cursor: pointer;
+}
+@keyframes hero-btn {
+  0% {
+    bottom: 0;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+  }
+  100% {
+    bottom: 30px;
+    box-shadow: 0 30px 30px rgba(0, 0, 0, 0.1);
+  }
+}
+.hero-btn .loading-button {
+  animation: bouncing 0.5s cubic-bezier(0.1, 0.25, 0.1, 1) 0s infinite alternate both;
 }
 
 .features {
@@ -316,6 +329,11 @@ a {
     flex-wrap: wrap;
     gap: 30px;
     justify-content: center;
+  }
+}
+@media screen and (min-width: 768px) and (min-width: 1200px) {
+  .hero-list {
+    flex-wrap: nowrap;
   }
 }
 
@@ -405,9 +423,14 @@ a {
     margin-bottom: 30px;
   }
 }
-@media screen and (max-width: 767px) and (min-width: 1200px) {
+@media screen and (min-width: 1200px) {
   .team .hero-list-child {
     width: calc((100% - 90px) / 4);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .team .hero-list-child {
+    flex-wrap: nowrap;
   }
 }
 .team-position {
@@ -452,8 +475,10 @@ a {
   color: #ffffff;
 }
 
-.socials-box {
-  margin-right: 93px;
+@media screen and (min-width: 1200px) {
+  .socials-box {
+    margin-right: 93px;
+  }
 }
 
 .customers {
@@ -537,8 +562,10 @@ a {
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
 }
-.footer-contacts-box {
-  margin-right: 70px;
+@media screen and (min-width: 1200px) {
+  .footer-contacts-box {
+    margin-right: 70px;
+  }
 }
 .footer-socials-text {
   margin-bottom: 20px;
@@ -797,12 +824,11 @@ a {
   position: absolute;
   top: 50%;
   left: 50%;
-  min-width: 528px;
-  min-height: 581px;
   padding: 40px;
   border-radius: 4px;
   background-color: #fff;
   transform: translate(-50%, -50%) scale(1);
+  min-width: 320px;
   transition: transform 300ms, color 300ms;
 }
 .modal-list_icon {
@@ -818,6 +844,11 @@ a {
   gap: 4px;
   width: 100%;
 }
+@media (max-width: 1199px) {
+  .modal {
+    width: 370px;
+  }
+}
 .modal-field {
   position: relative;
   margin-bottom: 10px;
@@ -830,9 +861,24 @@ a {
   outline: none;
   padding-left: 42px;
   transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  min-width: 450px;
+}
+@media (max-width: 1199px) {
+  .modal-input {
+    min-width: 320px;
+  }
 }
 .modal-textarea {
   resize: none;
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 12px;
+  letter-spacing: 0.01em;
+  color: rgba(117, 117, 117, 0.5);
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  width: 448px;
+  height: 120px;
 }
 .modal-field:focus-within .modal-list_icon {
   fill: #2196f3;
@@ -901,6 +947,12 @@ a {
   margin-left: 7px;
   width: 400px;
   height: 24px;
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 171%;
+  letter-spacing: 0.03em;
+  color: #757575;
 }
 
 .policy-link {
