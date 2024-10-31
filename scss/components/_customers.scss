@@ -9,9 +9,11 @@
     margin-bottom: 30px;
     font-family: $font-family;
     font-size: 28px;
-    font-weight: 700;
-    letter-spacing: 0.03em;
-    text-align: center;
+    @extend text-title;
+    //  font-weight: 700;
+    // letter-spacing: 0.03em;
+    //  text-align: center;
+     color: #212121;
     @media (min-width:1200px) {
       font-size: 36px;
       margin-bottom: 50px;

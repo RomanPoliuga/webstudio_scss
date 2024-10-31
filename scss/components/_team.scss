@@ -8,10 +8,11 @@
   }
   &-title {
     margin-bottom: 50px;
-    text-align: center;
-    font-weight: 700;
+    @extend text-title;
+    // text-align: center;
+    // font-weight: 700;
     font-size: 28px;
-    letter-spacing: 0.03em;
+    // letter-spacing: 0.03em;
     text-align: center;
     color: #212121;
     @media (max-width: 1200px) {
