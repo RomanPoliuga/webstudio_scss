@@ -57,11 +57,13 @@
     letter-spacing: 0.06em;
     text-transform: uppercase;
     text-align: center;
+    color: #ffffff;
     @media (min-width: 1200px) {
       font-size: 44px;
       line-height: 136%;
     }
   }
+  
   &-btn {
     padding: 10px 32px;
     font-weight: 700;
@@ -69,18 +71,13 @@
     line-height: 187%;
     letter-spacing: 0.06em;
     text-align: center;
-  }
-  &-title {
-    color: #ffffff;
-  }
-  &-btn {
     color: #ffffff;
     background-color: #5ab3fc;
     border: 0;
     border-radius: 4px;
     cursor: pointer;
-    animation: bouncing 0.5s cubic-bezier(0.1, 0.25, 0.1, 1) 0s infinite
-      alternate both;
+    animation: bouncing 0.5s cubic-bezier(0.1, 0.25, 0.1, 1) 0s infinite alternate 
+    both;
   }
   @keyframes bouncing {
     0% {
