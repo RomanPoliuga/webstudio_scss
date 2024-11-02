@@ -14,7 +14,7 @@
     font-size: 28px;
     // letter-spacing: 0.03em;
     text-align: center;
-    color: #212121;
+    // color: #212121;
     @media (max-width: 1200px) {
       font-size: 36px;
     }
@@ -40,15 +40,18 @@
     @media (max-width: 767px) {
       margin-bottom: 30px;
     }
-      @media screen and (min-width: 1200px) {
-     
-
+    @media screen and (min-width: 1200px) {
       width: calc((100% - 90px) / 4);
     }
-       @media screen and (min-width: 1200px) {
-         flex-wrap: nowrap;
-       }
-    
+    @media screen and (min-width: 1200px) {
+      flex-wrap: nowrap;
+    }
+    @media screen and (min-width: 768px) {
+      width: calc((100% - 30px) / 2);
+    }
+    @media screen and (min-width: 1200px) {
+      width: calc((100% - 90px) / 4);
+    }
   }
   &-position {
     font-weight: 400;
