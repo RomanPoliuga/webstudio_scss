@@ -15,31 +15,34 @@
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
     background-image: linear-gradient(
-      to right,
-      rgba(47, 48, 58, 0.4),
-      rgba(47, 48, 58, 0.4)
-    ), url(../images/mobile-hero-bg2x.jpg);
+        to right,
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url(../images/mobile-hero-bg2x.jpg);
   }
   @media (min-width: 768px) {
     background-image: url("../images/tablet-hero-bg.jpg");
     @media (min-device-pixel-ratio: 2),
       (min-resolution: 192dpi),
       (min-resolution: 2dppx) {
-      background-image:linear-gradient(
-        to right,
-        rgba(47, 48, 58, 0.4),
-        rgba(47, 48, 58, 0.4)
-      ), url(../images/tablet-hero-bg2x.jpg);
+      background-image: linear-gradient(
+          to right,
+          rgba(47, 48, 58, 0.4),
+          rgba(47, 48, 58, 0.4)
+        ),
+        url(../images/tablet-hero-bg2x.jpg);
     }
   }
   @media (min-width: 1200px) {
     padding-top: 200px;
     padding-bottom: 200px;
-    background-image:linear-gradient(
-      to right,
-      rgba(47, 48, 58, 0.4),
-      rgba(47, 48, 58, 0.4)
-    ), url("../images/hero-bg.jpg");
+    background-image: linear-gradient(
+        to right,
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url("../images/hero-bg.jpg");
     @media (min-device-pixel-ratio: 2),
       (min-resolution: 192dpi),
       (min-resolution: 2dppx) {
@@ -66,8 +69,6 @@
     line-height: 187%;
     letter-spacing: 0.06em;
     text-align: center;
-    
-    
   }
   &-title {
     color: #ffffff;
@@ -78,22 +79,18 @@
     border: 0;
     border-radius: 4px;
     cursor: pointer;
-    
+    animation: bouncing 0.5s cubic-bezier(0.1, 0.25, 0.1, 1) 0s infinite
+      alternate both;
   }
   @keyframes bouncing {
     0% {
       bottom: 0;
       box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
     }
- 
+
     100% {
       bottom: 30px;
       box-shadow: 0 30px 30px rgba(0, 0, 0, 0.1);
     }
-  }
- 
-  .btn {
-    animation: bouncing 0.5s cubic-bezier(0.1, 0.25, 0.1, 1) 0s infinite alternate
-      both;
   }
 }
