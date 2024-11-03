@@ -37,21 +37,21 @@
     box-shadow: 0 2px 1px 0 rgba(0, 0, 0, 0.2), 0 1px 1px 0 rgba(0, 0, 0, 0.14),
       0 1px 3px 0 rgba(0, 0, 0, 0.12);
     border-radius: 0 0 4px 4px;
-    @media (max-width: 767px) {
-      margin-bottom: 30px;
-    }
-    @media screen and (min-width: 1200px) {
-      width: calc((100% - 90px) / 4);
-    }
-    @media screen and (min-width: 1200px) {
-      flex-wrap: nowrap;
-    }
-    @media screen and (min-width: 768px) {
-      width: calc((100% - 30px) / 2);
-    }
-    @media screen and (min-width: 1200px) {
-      width: calc((100% - 90px) / 4);
-    }
+    // @media (max-width: 767px) {
+    //   margin-bottom: 30px;
+    // }
+    // @media screen and (min-width: 1200px) {
+    //   width: calc((100% - 90px) / 4);
+    // }
+    // @media screen and (min-width: 1200px) {
+    //   flex-wrap: nowrap;
+    // }
+    // @media screen and (min-width: 768px) {
+    //   width: calc((100% - 30px) / 2);
+    // }
+    // @media screen and (min-width: 1200px) {
+    //   width: calc((100% - 90px) / 4);
+    // }
   }
   &-position {
     font-weight: 400;
