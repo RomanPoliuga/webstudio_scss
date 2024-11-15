@@ -1,3 +1,10 @@
+.customers-title, .team-title, .occupation-title {
+  text-align: center;
+  font-weight: 700;
+  letter-spacing: 0.03em;
+  color: #212121;
+}
+
 body {
   font-family: "Roboto", sans-serif;
   color: #757575;
@@ -226,6 +233,7 @@ a {
   letter-spacing: 0.06em;
   text-transform: uppercase;
   text-align: center;
+  color: #ffffff;
 }
 @media (min-width: 1200px) {
   .hero-title {
@@ -240,18 +248,14 @@ a {
   line-height: 187%;
   letter-spacing: 0.06em;
   text-align: center;
-}
-.hero-title {
-  color: #ffffff;
-}
-.hero-btn {
   color: #ffffff;
   background-color: #5ab3fc;
   border: 0;
   border-radius: 4px;
   cursor: pointer;
+  animation: bouncing 0.5s cubic-bezier(0.1, 0.25, 0.1, 1) 0s infinite alternate both;
 }
-@keyframes hero-btn {
+@keyframes bouncing {
   0% {
     bottom: 0;
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
@@ -260,9 +264,6 @@ a {
     bottom: 30px;
     box-shadow: 0 30px 30px rgba(0, 0, 0, 0.1);
   }
-}
-.hero-btn .loading-button {
-  animation: bouncing 0.5s cubic-bezier(0.1, 0.25, 0.1, 1) 0s infinite alternate both;
 }
 
 .features {
@@ -339,11 +340,7 @@ a {
 
 .occupation-title {
   margin-bottom: 50px;
-  font-weight: 700;
   font-size: 36px;
-  letter-spacing: 0.03em;
-  text-align: center;
-  color: #212121;
 }
 
 .occupation .hero-list-child {
@@ -386,12 +383,8 @@ a {
 }
 .team-title {
   margin-bottom: 50px;
-  text-align: center;
-  font-weight: 700;
   font-size: 28px;
-  letter-spacing: 0.03em;
   text-align: center;
-  color: #212121;
 }
 @media (max-width: 1200px) {
   .team-title {
@@ -417,21 +410,6 @@ a {
   padding-bottom: 30px;
   box-shadow: 0 2px 1px 0 rgba(0, 0, 0, 0.2), 0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 1px 3px 0 rgba(0, 0, 0, 0.12);
   border-radius: 0 0 4px 4px;
-}
-@media (max-width: 767px) {
-  .team .hero-list-child {
-    margin-bottom: 30px;
-  }
-}
-@media screen and (min-width: 1200px) {
-  .team .hero-list-child {
-    width: calc((100% - 90px) / 4);
-  }
-}
-@media screen and (min-width: 1200px) {
-  .team .hero-list-child {
-    flex-wrap: nowrap;
-  }
 }
 .team-position {
   font-weight: 400;
@@ -495,9 +473,6 @@ a {
   margin-bottom: 30px;
   font-family: "Roboto", sans-serif;
   font-size: 28px;
-  font-weight: 700;
-  letter-spacing: 0.03em;
-  text-align: center;
 }
 @media (min-width: 1200px) {
   .customers-title {

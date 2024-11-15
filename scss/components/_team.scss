@@ -8,7 +8,7 @@
   }
   &-title {
     margin-bottom: 50px;
-    @extend text-title;
+    @extend %text-title;
     // text-align: center;
     // font-weight: 700;
     font-size: 28px;

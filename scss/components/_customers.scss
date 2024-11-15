@@ -9,7 +9,7 @@
     margin-bottom: 30px;
     font-family: $font-family;
     font-size: 28px;
-    @extend text-title;
+    @extend %text-title;
     //  font-weight: 700;
     // letter-spacing: 0.03em;
     //  text-align: center;
