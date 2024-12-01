@@ -11,7 +11,6 @@
   border: none;
   border-radius: 50%;
   outline: none;
-
   @media (min-width: 768px) {
     display: none;
   }
@@ -69,7 +68,7 @@
   color: #2196f3;
   font-size: 34px;
 }
-.mob-menu-program-list{
+.mob-menu-program-list {
   display: flex;
   gap: 20px;
 }
@@ -81,17 +80,17 @@
   letter-spacing: 0.02em;
   color: #2196f3;
 }
-.menu-container .menu-btn{
+.menu-container .menu-btn {
   position: absolute;
-    top: 16px;
-    right: 16px;
-    color: #212121;
+  top: 16px;
+  right: 16px;
+  color: #212121;
 }
-.menu-container .menu-btn:hover{
+.menu-container .menu-btn:hover {
   color: #2196f3;
 }
-.burger-menu-wrapper{
+.burger-menu-wrapper {
   display: flex;
-  flex-direction:column;
+  flex-direction: column;
   justify-content: space-between;
 }
