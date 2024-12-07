@@ -46,9 +46,10 @@
     display: flex;
     gap: 30px;
     flex-wrap: wrap;
-    @media (max-width:767px) {
-      display: block;
-    }
+     @media (max-width:767px) {
+       display: block;
+       
+     }
     
   }
   &-list-nav-child {
@@ -64,8 +65,12 @@
   &-list-child {
     position: relative;
     border: 1px solid #eee;
+    width: 370px;
     @media (max-width:767px) {
       width: 450px;
+    }
+    @media (max-width:1199px) {
+      width: 354px;
     }
   }
   // padding-top: 94px;

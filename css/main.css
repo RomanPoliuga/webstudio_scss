@@ -769,10 +769,16 @@ a {
 .portfolio-hero-list-child {
   position: relative;
   border: 1px solid #eee;
+  width: 370px;
 }
 @media (max-width: 767px) {
   .portfolio-hero-list-child {
     width: 450px;
+  }
+}
+@media (max-width: 1199px) {
+  .portfolio-hero-list-child {
+    width: 354px;
   }
 }
 .portfolio-hero-description {
